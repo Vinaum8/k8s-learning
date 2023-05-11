@@ -10,7 +10,7 @@ choco install kubernetes-cli -y
 choco install docker -y
 choco install docker-desktop -y
 choco install git -y
-choco install helm -y
+choco install kubernetes-helm -y
 
 kind create cluster --config .\kind\kind-start-config.yaml
 
