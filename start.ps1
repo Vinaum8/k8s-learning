@@ -23,9 +23,9 @@ kubectl wait --namespace ingress-nginx `
   --selector=app.kubernetes.io/component=controller `
   --timeout=90s
 
-kubectl apply -f .\deploy-app\deployment.yaml
+kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/usage.yaml
 
-Write-Output "Acesse os links no navegador para validar o funcionamento do cluster com Nginx - Ingress"
-Write-Output "http://localhost/bar"
-Write-Output "http://localhost/foo"
-
+# should output "foo-app"
+Invoke-WebRequest localhost/foo/hostname
+# should output "bar-app"
+Invoke-WebRequest localhost/bar/hostname
