@@ -17,3 +17,5 @@ Em desenvolvimento
 
 # Referências de estudos
 > https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry
+
+> https://cert-manager.io/docs/installation/helm/
