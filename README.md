@@ -9,6 +9,10 @@ kubectl create secret docker-registry <name> `
   --docker-email=DOCKER_EMAIL
 ```
 
+Cert Manager Notes:
+Staging certificates are valid but not trusted by browsers so you must get a production replacement before putting your site live.
+
+
 ## Powershell
 Os comandos para inicializam do cluster com o start.ps1
 
@@ -19,3 +23,5 @@ Em desenvolvimento
 > https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry
 
 > https://cert-manager.io/docs/installation/helm/
+
+> https://www.howtogeek.com/devops/how-to-install-kubernetes-cert-manager-and-configure-lets-encrypt/
