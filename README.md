@@ -12,9 +12,14 @@ kubectl create secret docker-registry <name> `
 Cert Manager Notes:
 Staging certificates are valid but not trusted by browsers so you must get a production replacement before putting your site live.
 
+## Comandos úteis
+```
+* kubectl run --image alpine -it demo sh
+```
+
 
 ## Powershell
-Os comandos para inicializam do cluster com o start.ps1
+Os comandos para inicializam do cluster com o start/powershell/start.ps1
 
 ## Bash
 Em desenvolvimento
