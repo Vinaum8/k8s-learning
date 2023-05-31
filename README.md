@@ -15,6 +15,7 @@ Staging certificates are valid but not trusted by browsers so you must get a pro
 ## Comandos úteis
 ```
 * kubectl run --image alpine -it demo sh
+* while true; do curl <URL>; done
 ```
 
 
