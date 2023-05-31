@@ -23,7 +23,10 @@ Staging certificates are valid but not trusted by browsers so you must get a pro
 Os comandos para inicializam do cluster com o start/powershell/start.ps1
 
 ## Bash
-Em desenvolvimento
+
+```
+sh start/bash/start.sh
+```
 
 # Referências de estudos
 > https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry

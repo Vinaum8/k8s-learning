@@ -1,2 +1,3 @@
 tls/*
 dotnet-app/*
+get-docker.sh
