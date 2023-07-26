@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: root-applications
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
     namespace: argocd
   project: default
   source:
-    path: argocd-learning/
+    path: argocd-learning/apps/
     repoURL: https://github.com/Vinaum8/k8s-learning.git
     targetRevision: HEAD
   syncPolicy:
