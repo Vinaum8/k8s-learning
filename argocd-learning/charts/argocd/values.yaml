@@ -1381,7 +1381,7 @@ redis:
 # Check the redis-ha chart for more properties
 redis-ha:
   # -- Enables the Redis HA subchart and disables the custom Redis single node deployment
-  enabled: false
+  enabled: true
   ## Prometheus redis-exporter sidecar
   exporter:
     # -- Enable Prometheus redis-exporter sidecar
@@ -1448,7 +1448,7 @@ server:
   name: server
 
   # -- The number of server pods to run
-  replicas: 1
+  replicas: 2
 
   ## Argo CD server Horizontal Pod Autoscaler
   autoscaling:
@@ -2015,10 +2015,10 @@ server:
 ## Repo Server
 repoServer:
   # -- Repo server name
-  name: repo-server
+  name: repo-server-testando
 
   # -- The number of repo server pods to run
-  replicas: 5
+  replicas: 2
 
   ## Repo server Horizontal Pod Autoscaler
   autoscaling:
@@ -2374,7 +2374,7 @@ applicationSet:
   name: applicationset-controller
 
   # -- The number of ApplicationSet controller pods to run
-  replicaCount: 1
+  replicaCount: 2
 
   ## ApplicationSet controller Pod Disruption Budget
   ## Ref: https://kubernetes.io/docs/tasks/run-application/configure-pdb/
