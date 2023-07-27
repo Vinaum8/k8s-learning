@@ -2018,7 +2018,7 @@ repoServer:
   name: repo-server
 
   # -- The number of repo server pods to run
-  replicas: 1
+  replicas: 5
 
   ## Repo server Horizontal Pod Autoscaler
   autoscaling:
