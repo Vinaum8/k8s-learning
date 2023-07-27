@@ -7,7 +7,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
-  project: core
+  project: default
   source:
     path: argocd-learning/apps/
     repoURL: https://github.com/Vinaum8/k8s-learning.git
