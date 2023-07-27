@@ -3,13 +3,11 @@ kind: Application
 metadata:
   name: root-applications
   namespace: argocd
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
-  project: default
+  project: core
   source:
     path: argocd-learning/apps/
     repoURL: https://github.com/Vinaum8/k8s-learning.git

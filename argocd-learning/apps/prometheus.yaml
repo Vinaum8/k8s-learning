@@ -3,13 +3,11 @@ kind: Application
 metadata:
   name: prometheus
   namespace: argocd
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
-  project: default
+  # project: core
   source:
     chart: prometheus
     helm:
