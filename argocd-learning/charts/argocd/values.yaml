@@ -2015,10 +2015,10 @@ server:
 ## Repo Server
 repoServer:
   # -- Repo server name
-  name: repo-server
+  name: repo-server-testando
 
   # -- The number of repo server pods to run
-  replicas: 1
+  replicas: 2
 
   ## Repo server Horizontal Pod Autoscaler
   autoscaling:
