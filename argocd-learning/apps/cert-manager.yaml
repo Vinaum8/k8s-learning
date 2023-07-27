@@ -14,7 +14,7 @@ spec:
       values: |
         installCRDs: true
     repoURL: https://charts.jetstack.io
-    # targetRevision: 15.6.0
+    targetRevision: latest
   syncPolicy:
     automated:
       prune: true
