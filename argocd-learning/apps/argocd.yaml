@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: monitoring
+    namespace: argocd
   project: default
   sources:
     - repoURL: https://argoproj.github.io/argo-helm
