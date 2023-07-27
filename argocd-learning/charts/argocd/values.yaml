@@ -178,7 +178,7 @@ configs:
 
     # -- Enable local admin user
     ## Ref: https://argo-cd.readthedocs.io/en/latest/faq/#how-to-disable-admin-user
-    admin.enabled: false
+    admin.enabled: true
 
     # -- Enable Devops User to Connnect Cluster
     accounts.devops: apiKey, login
@@ -192,8 +192,8 @@ configs:
     # OIDC configuration as an alternative to dex (optional).
     oidc.config: |
       name: AzureAD
-      issuer: https://login.microsoftonline.com/5e085b11-b943-4cfd-80b7-198cf77e6f3c/v2.0
-      clientID: 9af76c56-ce75-497f-a513-471d7322cf13
+      issuer: https://login.microsoftonline.com/tenant_ID/v2.0
+      clientID: object_ID
       clientSecret: $oidc.azure.clientSecret
       requestedIDTokenClaims:
         groups:
@@ -294,9 +294,6 @@ configs:
       p, role:org-admin, gpgkeys, get, *, allow
 
       g, devops, role:org-admin
-      g, "vinicius.fernandes@nextfit.com.br", role:org-admin
-      g, "victor.mendes@nextfit.com.br", role:org-admin
-      g, "vinicius@nextfit.com.br", role:org-admin
 
     # -- OIDC scopes to examine during rbac enforcement (in addition to `sub` scope).
     # The scope value can be a string, or a list of strings.
