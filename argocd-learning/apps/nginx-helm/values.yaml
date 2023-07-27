@@ -275,31 +275,31 @@ controller:
   ##   timeoutSeconds: 2
   ##   successThreshold: 1
   ##   failureThreshold: 5
-  livenessProbe:
-    httpGet:
-      # should match container.healthCheckPath
-      path: "/healthz"
-      port: 10254
-      scheme: HTTP
-    initialDelaySeconds: 10
-    periodSeconds: 10
-    timeoutSeconds: 1
-    successThreshold: 1
-    failureThreshold: 5
-  readinessProbe:
-    httpGet:
-      # should match container.healthCheckPath
-      path: "/healthz"
-      port: 10254
-      scheme: HTTP
-    initialDelaySeconds: 10
-    periodSeconds: 10
-    timeoutSeconds: 1
-    successThreshold: 1
-    failureThreshold: 3
-  # -- Path of the health check endpoint. All requests received on the port defined by
-  # the healthz-port parameter are forwarded internally to this path.
-  healthCheckPath: "/healthz"
+  # livenessProbe:
+  #   httpGet:
+  #     # should match container.healthCheckPath
+  #     path: "/healthz"
+  #     port: 10254
+  #     scheme: HTTP
+  #   initialDelaySeconds: 10
+  #   periodSeconds: 10
+  #   timeoutSeconds: 1
+  #   successThreshold: 1
+  #   failureThreshold: 5
+  # readinessProbe:
+  #   httpGet:
+  #     # should match container.healthCheckPath
+  #     path: "/healthz"
+  #     port: 10254
+  #     scheme: HTTP
+  #   initialDelaySeconds: 10
+  #   periodSeconds: 10
+  #   timeoutSeconds: 1
+  #   successThreshold: 1
+  #   failureThreshold: 3
+  # # -- Path of the health check endpoint. All requests received on the port defined by
+  # # the healthz-port parameter are forwarded internally to this path.
+  # healthCheckPath: "/healthz"
   # -- Address to bind the health check endpoint.
   # It is better to set this option to the internal node address
   # if the Ingress-Nginx Controller is running in the `hostNetwork: true` mode.
