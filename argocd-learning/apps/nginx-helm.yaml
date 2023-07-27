@@ -9,7 +9,7 @@ spec:
     namespace: ingress-nginx
   project: default
   source:
-    path: apps/nginx-helm/
+    path: argocd-learning/apps/nginx-helm/
     repoURL: https://github.com/Vinaum8/k8s-learning.git
     targetRevision: HEAD
   syncPolicy:
