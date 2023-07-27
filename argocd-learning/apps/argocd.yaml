@@ -11,7 +11,7 @@ spec:
   source:
     chart: argocd-learning/charts/argocd/
     repoURL: https://github.com/Vinaum8/k8s-learning.git
-    targetRevision: HEAD
+    # targetRevision: HEAD
     helm:
     valueFiles:
       - values.yaml
