@@ -10,8 +10,8 @@ spec:
   project: default
   source:
     chart: argocd-learning/charts/argocd/
-    repoURL: https://github.com/Vinaum8/k8s-learning.git
-    # targetRevision: HEAD
+    repoURL: https://argoproj.github.io/argo-helm
+    targetRevision: 5.41.2
     helm:
     valueFiles:
       - values.yaml
