@@ -1,12 +1,4 @@
-# Instalar pré requisitos para criação de um cluster local
 #!/bin/bash
-
-# kind
-# kubernetes-cli
-# docker
-# docker-desktop
-# git
-# kubernetes-helm
 
 # Instalação do Kind
 if ! command -v kind &> /dev/null; then
